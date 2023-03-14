@@ -94,18 +94,21 @@ Codefellows/
 └── reading-notes
 ```
 ### Install VSCODE
-* Read through the instructions at this link so you understand the process but don't install any extensions yet. We will do that seperately. 
- ** [Windows 10 VSCODE Install Notes](https://codefellows.github.io/setup-guide/system-setup/windows/10-vscode.html)
- ** Download and install VSCODE System Installer x64 [HERE](https://code.visualstudio.com/docs/?dv=win64)
+* Read through the instructions [at this link]((https://codefellows.github.io/setup-guide/system-setup/windows/10-vscode.html) so you understand the process but don't install anything yet.
+  * Download and install VSCODE System Installer x64 [HERE](https://code.visualstudio.com/docs/?dv=win64)eslint also needs to be installed as a local extension with VSCODE.
+  * eslint also needs to be installed as a local extension with VSCODE.
+* Install needed VSCODE extensions nice and easy, includes WSL extension too
+   ```bash
+  extensions="dbaeumer.vscode-eslint,EditorConfig.EditorConfig,george-alisson.html-preview-vscode,ms-vscode-remote.remote-wsl,rangav.vscode-thunder-client,ritwickdey.LiveServer"
+  Field_Separator=$IFS
+  IFS=,
 
-### eslint also needs to be installed as a local extension with VSCODE.
+  for extension in $extensions;
+	  do code --install-extension $extension
+  done
 
-### Install needed VSCODE extensions nice and easy, inclused WSL extension too
-```bash
-for extensions in dbaeumer.vscode-eslint EditorConfig.EditorConfig george-alisson.html-preview-vscode ms-vscode-remote.remote-wsl rangav.vscode-thunder-client ritwickdey.LiveServer
-do code --install-extension $extensions
-done
-```
+  IFS=$Field_Separator
+   ```
 
 ### Close VSCode and exit Ubuntu terminal so 'code .' will work.
 
@@ -113,8 +116,11 @@ done
 ```bash
 cd ~/Codefellows/; code .
 ```
-### Confirm everything was installed
+Is VSCODE showing your CodeFellows class folders? 
+
+### Verify everything was installed
 #### Check versions
+[Version List](https://codefellows.github.io/setup-guide/system-setup/windows/11-verify.html)
 ```bash
 code --version
 git --version
