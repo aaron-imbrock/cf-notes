@@ -61,8 +61,8 @@ brew install gcc git gh tree node
 ### Copy this into Notepad and update. Paste notepad text into terminal.
 Github is essentially a resume, so use your name as it appears on LinkedIn.
 ```bash
-git config --global user.name 'YOUR NAME HERE'              # 
-git config --global user.email 'your github email address'  # 
+git config --global user.name 'YOUR NAME HERE'
+git config --global user.email 'your github email address'
 git config --global core.editor "code --wait"
 git config --global init.defaultbranch main
 ```
@@ -94,9 +94,8 @@ Codefellows/
 └── reading-notes
 ```
 ### Install VSCODE
-* Read through the instructions [at this link]((https://codefellows.github.io/setup-guide/system-setup/windows/10-vscode.html) so you understand the process but don't install anything yet.
+* Read through the instructions [at this link](https://codefellows.github.io/setup-guide/system-setup/windows/10-vscode.html) so you understand the process but don't install anything yet.
   * Download and install VSCODE System Installer x64 [HERE](https://code.visualstudio.com/docs/?dv=win64)eslint also needs to be installed as a local extension with VSCODE.
-  * eslint also needs to be installed as a local extension with VSCODE.
 * Install needed VSCODE extensions nice and easy, includes WSL extension too
    ```bash
   extensions="dbaeumer.vscode-eslint,EditorConfig.EditorConfig,george-alisson.html-preview-vscode,ms-vscode-remote.remote-wsl,rangav.vscode-thunder-client,ritwickdey.LiveServer"
