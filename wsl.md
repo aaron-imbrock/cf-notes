@@ -29,6 +29,7 @@ wsl --shutdown
 ```bash
 wsl --update
 ```
+### Reboot your computer
 
 ## Install Ubuntu 20.04 LTS from the Microsoft store page
 
