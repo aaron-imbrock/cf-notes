@@ -8,3 +8,8 @@ These are the notes I refer to for common issues I come across. They assume you 
 
 ## MONGODB on WSL
 
+[MongoDB on WSL](mongodb.md)
+
+## 401 JS
+
+[401JS Notes](401js.md)
