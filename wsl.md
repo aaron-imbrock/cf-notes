@@ -42,16 +42,17 @@ You have a fresh linux install. In a moment we'll install the necessary programs
 sudo sh -c 'apt update && apt -y full-upgrade && apt install -y zsh build-essential wget ca-certificates'
 sudo sh -c 'apt -y autoremove'
 ```
-
-Fully close all Ubuntu terminals. Then open a new Ubuntu terminal before continuing.
-### Install OH-My-ZSH
-First change the default shell to ZSH
+### Change the default shell to ZSH
 ```bash
 chsh -s /usr/bin/zsh
 ```
+Fully close all Ubuntu terminals. Then open a new Ubuntu terminal before continuing.
+
+### Install Oh-My-ZSH
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+
 ### Install Homebrew
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
