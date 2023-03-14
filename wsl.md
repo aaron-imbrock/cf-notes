@@ -30,6 +30,8 @@ wsl --update
 
 [Install Ubuntu 20.04LTS](https://www.microsoft.com/store/apps/9n6svws3rx71)
 
+Install Ubuntu with username and password. Note down the password you used. Keep it simple.
+
 ## Now in the UBUNTU TERMINAL:
 ```bash
 sudo sh -c 'apt update && apt -y full-upgrade && apt install -y zsh build-essential wget ca-certificates'
@@ -64,32 +66,64 @@ git config --global user.email 'your github email address'  #
 git config --global core.editor "code --wait"
 git config --global init.defaultbranch main
 ```
+### Run Github Authentication
+```bash
 gh auth login
-
+```
+### Install live-server on commandline
+```bash
 npm install -g live-server eslint --loglevel verbose
-
+```
+### Setup CF class directories and clone down reading-notes repo
+```bash
 mkdir -p ~/Codefellows/{102,201,301,401} && cd ~/Codefellows/;
+```
+Use the URL of your reading notes repo not "reading-notes-url".
+```bash
+git clone reading-notes-url
+```
+When you're done the folder structure will look this, one folder for each class and the reading-notes repo.
 
-git clone reading-notes-url # Use the URL of your reading notes repo not "reading-notes-url"
+```
+$ tree Codefellows/
+Codefellows/
+├── 102
+├── 201
+├── 301
+├── 401
+└── reading-notes
+```
+### Install VSCODE
+* Read through the instructions at this link so you understand the process but don't install any extensions yet. We will do that seperately. 
+ ** [Windows 10 VSCODE Install Notes](https://codefellows.github.io/setup-guide/system-setup/windows/10-vscode.html)
+ ** Download and install VSCODE System Installer x64 [HERE](https://code.visualstudio.com/docs/?dv=win64)
 
-* Read through the instructions at this link so you understand process. Don't install extensions yet: https://codefellows.github.io/setup-guide/system-setup/windows/10-vscode.html
-** This link will install the correct version: VSCODE System Installer x64 https://code.visualstudio.com/docs/?dv=win64
+### eslint also needs to be installed as a local extension with VSCODE.
 
-** eslint also needs to be installed as a local extension with VSCODE.
-
-### Equivalent to manually installing each extension including WSL Remote, but from WSL Ubuntu cli
+### Install needed VSCODE extensions nice and easy, inclused WSL extension too
+```bash
 for extensions in dbaeumer.vscode-eslint EditorConfig.EditorConfig george-alisson.html-preview-vscode ms-vscode-remote.remote-wsl rangav.vscode-thunder-client ritwickdey.LiveServer
 do code --install-extension $extensions
 done
+```
 
-Close VSCode
-exit Ubuntu terminal so 'code .' will work.
+### Close VSCode and exit Ubuntu terminal so 'code .' will work.
 
+### Open Ubuntu terminal and confirm `code .` works
+```bash
+cd ~/Codefellows/; code .
+```
+### Confirm everything was installed
+#### Check versions
+```bash
+code --version
+git --version
+node --version
+npm --version
+eslint --version
+tree --version
+```
+### Confirm 
+```bash
 curl -Ls https://bit.ly/3qMWhbE | bash
-
-## JS 401 Only
-
-pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgresql@14 start
-echo 'alias pgstart="pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgresql@14 start"' >> ~/.zshrc
-echo 'alias pgstop="pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgresql@14 stop"' >> ~/.zshrc
-createdb `whoami`
+```
