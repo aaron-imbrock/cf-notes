@@ -119,14 +119,14 @@ Is VSCODE showing your CodeFellows class folders?
 
 ### Verify everything was installed
 #### Check versions
-[Version List](https://codefellows.github.io/setup-guide/system-setup/windows/11-verify.html)
+Compare [Version List](https://codefellows.github.io/setup-guide/system-setup/windows/11-verify.html) to what you have installed.
 ```bash
-code --version
-git --version
-node --version
-npm --version
-eslint --version
-tree --version
+clear
+for app in code git node npm eslint tree;
+do
+	echo
+	echo -n "$app version: "; $app --version
+done
 ```
 #### Confirm GIT Settings
 ```bash
