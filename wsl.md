@@ -1,5 +1,7 @@
 # WSL Computer Setup Instructions
 
+Cliff Notes of the [WSL Setup Guide](https://codefellows.github.io/setup-guide/)
+
 ## In POWERSHELL (ADMIN)
 
 ### Enable the Windows Subsystem for Linux
