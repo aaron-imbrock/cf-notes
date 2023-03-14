@@ -129,7 +129,17 @@ npm --version
 eslint --version
 tree --version
 ```
-### Confirm 
+#### Confirm GIT Settings
+```bash
+git config --list
+```
+
+### Run CF Confirm Script
 ```bash
 curl -Ls https://bit.ly/3qMWhbE | bash
+```
+If everything was installed you'll see:
+```bash
+~$ curl -Ls https://bit.ly/3qMWhbE | bash
+By gum, you've done it!
 ```
