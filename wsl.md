@@ -1,45 +1,46 @@
-# 
-#
-#
+# WSL Computer Setup Instructions
 
 ## In POWERSHELL (ADMIN)
 
-# Enable the Windows Subsystem for Linux
+### Enable the Windows Subsystem for Linux
+```bash
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-
-# Enable Virtual Machine feature
+```
+### Enable Virtual Machine feature
+```bash
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-
-Reboot computer
-
+```
+Reboot your computer
+```bash
 wsl --install # If this step is necessary you'll next need to reboot the computer again
-
-# Set WSL 2 as your default version
+```
+### Set WSL 2 as your default version
+```bash
 wsl --set-default-version 2
 wsl --update
 wsl --shutdown
+```
+### Install Ubuntu 20.04 LTS from the Microsoft store page
 
-# Install the Linux distro
-# The following link will open the Microsoft store page for Ubuntu 20.04 LTS.
+[Install Ubuntu 20.04LTS](https://www.microsoft.com/store/apps/9n6svws3rx71)
 
-https://www.microsoft.com/store/apps/9n6svws3rx71
-
-#	Make sure Ubuntu closes... and then reopen it.
-#
-## IN UBUNTU TERMINAL:
-#
-
+## Now in the UBUNTU TERMINAL:
+```bash
 sudo sh -c 'apt update && apt -y full-upgrade && apt install -y zsh build-essential wget ca-certificates'
 sudo sh -c 'apt -y autoremove'
-
+```
+Now change the default shell to ZSH
+```bash
 chsh -s /usr/bin/zsh
-
-CLOSE UBUNTU, and reopen it.
-
+```
+Fully close all Ubuntu terminals. Then open a new Ubuntu terminal before continuing.
+## 
+```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
+```
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
+```
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.zshrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
