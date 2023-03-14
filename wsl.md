@@ -10,16 +10,22 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 ```bash
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
-Reboot your computer
+### Install WSL
 ```bash
-wsl --install # If this step is necessary you'll next need to reboot the computer again
+wsl --install
 ```
-### Set WSL 2 as your default version
+If `wsl --install` was necessary you'll need to reboot the computer yet again. (Confirm this please and tell Aaron).
+### Now Set WSL 2 as the default version
 ```bash
 wsl --set-default-version 2
-wsl --update
+```
+```bash
 wsl --shutdown
 ```
+```bash
+wsl --update
+```
+
 ### Install Ubuntu 20.04 LTS from the Microsoft store page
 
 [Install Ubuntu 20.04LTS](https://www.microsoft.com/store/apps/9n6svws3rx71)
@@ -34,23 +40,30 @@ Now change the default shell to ZSH
 chsh -s /usr/bin/zsh
 ```
 Fully close all Ubuntu terminals. Then open a new Ubuntu terminal before continuing.
-## 
+### Install OH-My-ZSH
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+### Install Homebrew
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+```bash
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.zshrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
+```
+### Install necessary tools from Homebrew
+```bash
 brew install gcc git gh tree node
-
-git config --global user.name 'YOUR NAME HERE'              # This is a resume, so use your name as it appears on LinkedIn
+```
+### Copy this into Notepad and update. Paste notepad text into terminal.
+Github is essentially a resume, so use your name as it appears on LinkedIn.
+```bash
+git config --global user.name 'YOUR NAME HERE'              # 
 git config --global user.email 'your github email address'  # 
 git config --global core.editor "code --wait"
 git config --global init.defaultbranch main
-
+```
 gh auth login
 
 npm install -g live-server eslint --loglevel verbose
