@@ -2,22 +2,24 @@
 
 Cliff Notes of the [WSL Setup Guide](https://codefellows.github.io/setup-guide/)
 
+All code blocks can be copy/pasted into the terminal unless noted otherwise.
+
 ## In POWERSHELL (ADMIN)
 
-### Enable the Windows Subsystem for Linux
+Enable the Windows Subsystem for Linux
 ```bash
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
-### Enable Virtual Machine feature
+Enable Virtual Machine feature
 ```bash
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
-### Install WSL
+Install WSL
 ```bash
 wsl --install
 ```
 If `wsl --install` was necessary you'll need to reboot the computer yet again. (Confirm this please and tell Aaron).
-### Now Set WSL 2 as the default version
+Now Set WSL 2 as the default version
 ```bash
 wsl --set-default-version 2
 ```
@@ -28,13 +30,14 @@ wsl --shutdown
 wsl --update
 ```
 
-### Install Ubuntu 20.04 LTS from the Microsoft store page
+## Install Ubuntu 20.04 LTS from the Microsoft store page
 
 [Install Ubuntu 20.04LTS](https://www.microsoft.com/store/apps/9n6svws3rx71)
 
-Install Ubuntu with username and password. Note down the password you used. Keep it simple.
+Install Ubuntu with a simple username and password. Note the password you used. Keep it simple.
 
 ## Now in the UBUNTU TERMINAL:
+You have a fresh linux install. In a moment we'll install the necessary programs you need to code with but we'll start by updating the system itself.
 ```bash
 sudo sh -c 'apt update && apt -y full-upgrade && apt install -y zsh build-essential wget ca-certificates'
 sudo sh -c 'apt -y autoremove'
