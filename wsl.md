@@ -97,7 +97,7 @@ Codefellows/
 ```
 ### Install VSCODE
 * Read through the instructions [at this link](https://codefellows.github.io/setup-guide/system-setup/windows/10-vscode.html) so you understand the process but don't install anything yet.
-  * Download and install VSCODE System Installer x64 [HERE](https://code.visualstudio.com/docs/?dv=win64)eslint also needs to be installed as a local extension with VSCODE.
+  * Download and install VSCODE System Installer x64 [HERE](https://code.visualstudio.com/docs/?dv=win64)
 * Install needed VSCODE extensions nice and easy, includes WSL extension too
    ```bash
   extensions="dbaeumer.vscode-eslint,EditorConfig.EditorConfig,george-alisson.html-preview-vscode,ms-vscode-remote.remote-wsl,rangav.vscode-thunder-client,ritwickdey.LiveServer"
