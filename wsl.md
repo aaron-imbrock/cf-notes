@@ -2,7 +2,7 @@
 
 Cliff Notes of the [WSL Setup Guide](https://codefellows.github.io/setup-guide/)
 
-All code blocks can be copy/pasted into the terminal unless noted otherwise.
+All code blocks can be copy/pasted into the terminal unless noted otherwise. ***Reboots are not required except where called out.***
 
 ## In POWERSHELL (ADMIN)
 
