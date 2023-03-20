@@ -67,9 +67,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install gcc git gh tree node
 ```
 ### Copy this into Notepad and update. Paste notepad text into terminal.
-Github is essentially a resume, so use your name as it appears on LinkedIn.
+Github is essentially a resume, so use your name as it appears on LinkedIn. Make the changes below inside the single quotes.
 ```bash
-git config --global user.name 'YOUR NAME HERE'
+git config --global user.name 'First and Last Name' # For example 'Aaron Imbrock' 
 git config --global user.email 'your github email address'
 git config --global core.editor "code --wait"
 git config --global init.defaultbranch main
