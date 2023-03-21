@@ -6,6 +6,8 @@ All code blocks can be copy/pasted into the terminal unless noted otherwise. ***
 
 These notes are for staff of CodeFellows and not intended for students. If you're a student reading this, you should follow the official guide linked to above.
 
+*Pull Requests gladly accepted.*
+
 ## In POWERSHELL (ADMIN)
 
 Enable the Windows Subsystem for Linux
