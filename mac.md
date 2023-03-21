@@ -1,6 +1,6 @@
 ### Mac Screen Sharing in Remo
 
-Turn Mac screen sharing on or off
+Turn Mac screen sharing on
 https://support.apple.com/en-ie/guide/mac-help/mh11848/mac
 
 Enable screen-sharing on macOS Chrome
