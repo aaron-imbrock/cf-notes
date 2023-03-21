@@ -83,6 +83,7 @@ git config --global user.name 'First and Last Name' # For example 'Aaron Imbrock
 git config --global user.email 'your github email address'
 git config --global core.editor "code --wait"
 git config --global init.defaultbranch main
+git config --global core.pager "cat"
 ```
 ### Run Github Authentication
 ```bash
