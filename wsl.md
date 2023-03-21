@@ -104,7 +104,8 @@ Codefellows/
 ### Install VSCODE
 * Read through the instructions [at this link](https://codefellows.github.io/setup-guide/system-setup/windows/10-vscode.html) so you understand the process but don't install anything yet.
   * Download and install VSCODE System Installer x64 [HERE](https://code.visualstudio.com/docs/?dv=win64)
-* Install needed VSCODE extensions nice and easy, includes WSL extension too
+  * During the install make sure every single checkbox is cheched.
+* Install needed VSCODE extensions nice and easy, this includes the WSL extension too
    ```bash
   extensions="dbaeumer.vscode-eslint,EditorConfig.EditorConfig,george-alisson.html-preview-vscode,ms-vscode-remote.remote-wsl,rangav.vscode-thunder-client,ritwickdey.LiveServer"
   Field_Separator=$IFS
@@ -113,8 +114,8 @@ Codefellows/
   for extension in $extensions;
 	  do code --install-extension $extension
   done
-
   IFS=$Field_Separator
+  
    ```
 
 ### Close VSCode and exit Ubuntu terminal so 'code .' will work.
