@@ -14,7 +14,7 @@ Username for 'https://github.com': test@gmail.com
 Password for 'https://test@gmail.com@github.com': 
 remote: Support for password authentication was removed on August 13, 2021.
 remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-fatal: Authentication failed for 'https://github.com/aaron-imbrock/cookie-stand.git/'
+fatal: Authentication failed for 'https://github.com/test-test/test.git/'
 ```
 ### Determination if caused by
 In the example below the newest version of `gh` is 2.23.0 but the `.gitconfig` file is still looking for 1.18.0. Check this with:
