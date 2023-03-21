@@ -10,6 +10,10 @@ These are the notes I refer to for common issues I come across. They assume you 
 
 [Fix for gh](gh-issues.md)
 
+## MAC Screen Sharing
+
+[Enable Screen Sharing on Mac](mac.md)
+
 ## MONGODB on WSL
 
 [MongoDB on WSL](mongodb.md)
