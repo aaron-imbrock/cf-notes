@@ -129,7 +129,7 @@ Codefellows/
   
    ```
 
-### Close VSCode and exit Ubuntu terminal so 'code .' will work.
+### Close VSCode and exit Ubuntu.
 
 ### Open Ubuntu terminal and confirm `code .` works
 ```bash
