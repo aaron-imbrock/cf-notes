@@ -7,6 +7,7 @@ Subsequently, a `git push` will fail silently and fall back to https. https on G
 
 The fix is to update the full path in the `.gitconfig` file to point to the newest version.
 
+### This is what you see in the terminal
 ```shell
 $ git push origin main
 Username for 'https://github.com': test@gmail.com
@@ -15,7 +16,7 @@ remote: Support for password authentication was removed on August 13, 2021.
 remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
 fatal: Authentication failed for 'https://github.com/aaron-imbrock/cookie-stand.git/'
 ```
-
+### Determination if caused by
 In the example below the newest version of `gh` is 2.23.0 but the `.gitconfig` file is still looking for 1.18.0. Check this with:
 ```shell
 ls -l $(which gh)
@@ -45,6 +46,6 @@ Open `.gitconfig` and change the version to match the new version and `git push`
 	helper = 
 	helper = !/home/linuxbrew/.linuxbrew/Cellar/gh/2.23.0/bin/gh auth git-credential
 ```
-### OR
+### OR, better...
 
 If you clone with **SSH** the issue is bypassed and you'll never see it.
