@@ -37,7 +37,9 @@ wsl --update
 In this section you'll install Ubuntu. If you still see an error message upon first load, then Virtualization likely needs to be enabled in the BIOS.
 Have the student install Zoom on their cell phone, start a Zoom meeting with them and make sure audio and video work before leaving Remo. 
 
-Getting into the BIOS requiring hitting a key. It's usually **F2** or **DELETE**. Look for Virtualization under the ADVANCED section in the BIOS. Googling 'enable virtualization in /model/ /manufacturer/' is how I go if I can't find it. 
+Getting into the BIOS requiring hitting a specific key before the OS starts to boot up. You don't have much time so if you miss it just reboot and try again. Look for a message on the screen similar to 'Press [F2] to enter BIOS'. Something like that. It's usually **F2** or **DELETE**. 
+
+Once in the BIOS look for Virtualization under the ADVANCED section. Googling 'enable virtualization in /model/ /manufacturer/' is how I go if I can't find it. 
 
 ## Install Ubuntu 20.04 LTS from the Microsoft store page
 
