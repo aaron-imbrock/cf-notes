@@ -2,8 +2,8 @@
 ### Issue
 There's a bug in the HomeBrew version GitHub CLI aka `gh`. 
 
-When `gh` get's updated to a newer version the full path in `~/.gitconfig` still points to the older version.
-Subsequently, a `git push` will fail and try to fall back to https. https on Github has been deprecated and no longer works. So you'll be prompted for your github username and password only to have that fail.
+When `gh` gets updated to a newer version, the full path found in `~/.gitconfig` still points to the older version.
+Subsequently, a `git push` will fail silently and fall back to https. https on Github has been deprecated for some time and no longer works. You'll be prompted for your github username and password only to have that fail too.
 
 The fix is to update the full path in the `.gitconfig` file to point to the newest version.
 
