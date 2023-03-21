@@ -46,6 +46,6 @@ Open `.gitconfig` and change the version to match the new version and `git push`
 	helper = 
 	helper = !/home/linuxbrew/.linuxbrew/Cellar/gh/2.23.0/bin/gh auth git-credential
 ```
-### OR, better...
+### Or, better...
 
 If you clone with **SSH** the issue is bypassed and you'll never see it.
