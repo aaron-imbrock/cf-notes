@@ -22,7 +22,6 @@ Install WSL
 ```bash
 wsl --install
 ```
-If `wsl --install` was necessary you'll need to reboot the computer yet again. (Confirm this please and tell Aaron).
 Now Set WSL 2 as the default version
 ```bash
 wsl --set-default-version 2
@@ -33,6 +32,13 @@ wsl --shutdown
 ```bash
 wsl --update
 ```
+Note:
+
+In the next section you'll install Ubuntu. If you still see an error message upon first load, then Virtualization likely needs to be enabled in the BIOS.
+Have the student install Zoom on their cell phone, start a Zoom meeting with them and make sure audio and video work before leaving Remo. 
+
+Getting into the BIOS requiring hitting a key. It's usually **F2** or **DELETE**. Look for Virtualization under the ADVANCED section in the BIOS. Googling 'enable virtualization in /model/ /manufacturer/' is how I go if I can't find it. 
+
 ### Reboot your computer
 
 ## Install Ubuntu 20.04 LTS from the Microsoft store page
