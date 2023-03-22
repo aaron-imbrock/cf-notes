@@ -119,7 +119,9 @@ Codefellows/
   ![Screenshot of Visual Studio Code Install screen showing all necessary checkboxes.](media/vsc.PNG)
 * Install needed VSCODE extensions nice and easy, this includes the WSL extension too
    ```bash
-  extensions="dbaeumer.vscode-eslint,EditorConfig.EditorConfig,george-alisson.html-preview-vscode,ms-vscode-remote.remote-wsl,rangav.vscode-thunder-client,ritwickdey.LiveServer"
+  extensions="dbaeumer.vscode-eslint,EditorConfig.EditorConfig,george-alisson.html-preview-vscode,ms-vscode-remote.remote-wsl,rangav.vscode-thunder-client,ritwickdefor extensions in dbaeumer.vscode-eslint EditorConfig.EditorConfig george-alisson.html-preview-vscode ms-vscode-remote.remote-wsl rangav.vscode-thunder-client ritwickdey.LiveServer
+do code --install-extension $extensions
+doney.LiveServer"
   Field_Separator=$IFS
   IFS=,
 
