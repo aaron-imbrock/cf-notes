@@ -18,6 +18,10 @@ These are the notes I refer to for common issues I come across. They assume you 
 
 [MongoDB on WSL](mongodb.md)
 
+## 401 Python
+
+[401JS Notes](401python.md)
+
 ## 401 JS
 
 [401JS Notes](401js.md)
