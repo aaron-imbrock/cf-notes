@@ -9,7 +9,10 @@ These notes are for staff of CodeFellows and not intended for students. If you'r
 *Pull Requests gladly accepted.*
 
 ## In POWERSHELL (ADMIN)
-
+First run this:
+```bash
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+```
 Enable the Windows Subsystem for Linux
 ```bash
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
@@ -34,18 +37,22 @@ wsl --update
 ```
 ### Reboot your computer
 
-In this section you'll install Ubuntu. If you still see an error message upon first load, then Virtualization likely needs to be enabled in the BIOS.
-Have the student install Zoom on their cell phone, start a Zoom meeting with them and make sure audio and video work before leaving Remo. 
-
-Getting into the BIOS requiring hitting a specific key before the OS starts to boot up. You don't have much time so if you miss it just reboot and try again. Look for a message on the screen similar to 'Press [F2] to enter BIOS'. Something like that. It's usually **F2** or **DELETE**. 
-
-Once in the BIOS look for Virtualization under the ADVANCED section. Googling 'enable virtualization in /model/ /manufacturer/' is how I go if I can't find it. 
-
 ## Install Ubuntu 20.04 LTS from the Microsoft store page
 
 [Install Ubuntu 20.04LTS](https://www.microsoft.com/store/apps/9n6svws3rx71)
 
 Install Ubuntu with a simple username and password. Note the password you used. Keep it simple.
+
+### Enable Virtualization in the BIOS
+Skip this part if Ubuntu installed correctly.
+
+In the previous section you installed Ubuntu. Upon first run of the Ubuntu application, if you saw an error message upon first load, then Virtualization likely needs to be enabled in the BIOS. Make sure to Google the error message, of course.
+
+If enabling Virtualization in the BIOS is necessary have the student install Zoom on their cell phone, start a Zoom meeting with them and make sure audio and video work before leaving Remo. 
+
+Getting into the BIOS requiring hitting a specific key before the OS starts to boot up. You don't have much time so if you miss it just reboot and try again. Look for a message on the screen similar to 'Press [F2] to enter BIOS'. Something like that. It's usually **F2** or **DELETE**. 
+
+Once in the BIOS look for Virtualization under the ADVANCED section. Googling 'enable virtualization in /model/ /manufacturer/' is how I go if I can't find it. 
 
 ## Now in the UBUNTU TERMINAL:
 You have a fresh linux install. In a moment we'll install the necessary programs you need to code with but we'll start by updating the system itself.
