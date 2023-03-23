@@ -45,9 +45,10 @@ wsl --update
 
 ## Install Ubuntu from the Microsoft store page
 
-Install Ubuntu by opening the Microsoft Store application and searching for Ubuntu. Install the application called 'Ubuntu'.
-
-![Screenshot of Ubuntu app in Microsoft Store](media/ubuntu.PNG)
+Install Ubuntu, this is the same as opening the Microsoft Store app, searching for 'Ubuntu' and installing it from there:
+```powershell
+wsl --install -d ubuntu
+```
 
 Install Ubuntu with a simple username and password. Note the password you used. Keep it simple.
 
@@ -63,7 +64,10 @@ Getting into the BIOS requiring hitting a specific key before the OS starts to b
 Once in the BIOS look for Virtualization under the ADVANCED section. Googling 'enable virtualization in /model/ /manufacturer/' is how I go if I can't find it. 
 
 ## Now in the UBUNTU TERMINAL:
-You have a fresh linux install. In a moment we'll install the necessary programs you need to code with but we'll start by updating the system itself.
+
+From the Start Menu search for Ubuntu. Open it.
+
+You now have a fresh linux install. In a moment we'll install the necessary programs you need to code with but we'll start by updating the system itself.
 ```bash
 sudo sh -c 'apt update && apt -y full-upgrade && apt install -y zsh build-essential wget ca-certificates'
 sudo sh -c 'apt -y autoremove'
