@@ -6,11 +6,6 @@ Left-click on Windows PowerShell (Admin)
 
 ## In POWERSHELL (ADMIN)
 
-### Run Windows Update
-```text
-Install-Module PSWindowsUpdate
-```
-
 # WSL Computer Setup Instructions
 
 Cliff Notes of the [WSL Setup Guide](https://codefellows.github.io/setup-guide/)
