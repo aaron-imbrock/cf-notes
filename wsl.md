@@ -41,7 +41,7 @@ wsl --update
 
 Install Ubuntu by opening the Microsoft Store application and searching for Ubuntu. Install the application called just 'Ubuntu'.
 
-![Screenshot of Ubuntu app in Microsoft Store](media/ubuntu-microsoft-store.jpeg)
+![Screenshot of Ubuntu app in Microsoft Store](media/ubuntu.PNG)
 
 Install Ubuntu with a simple username and password. Note the password you used. Keep it simple.
 
