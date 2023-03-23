@@ -1,3 +1,16 @@
+# Update Windows 10 from PowerShell
+
+Right-click on the Windows 10 Start Menu.
+
+Left-click on Windows PowerShell (Admin)
+
+## In POWERSHELL (ADMIN)
+
+### Run Windows Update
+```text
+Install-Module PSWindowsUpdate
+```
+
 # WSL Computer Setup Instructions
 
 Cliff Notes of the [WSL Setup Guide](https://codefellows.github.io/setup-guide/)
@@ -34,20 +47,10 @@ wsl --shutdown
 wsl --update
 ```
 ### Reboot your computer
-Optimize some WSL network settings
-```bash
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
-Disable-NetAdapterBinding -Name "vEthernet (WSL)" -ComponentID ms_tcpip6 -IncludeHidden # disable ipv6
-Disable-NetAdapterLso -Name "vEthernet (WSL)" -IncludeHidden # Seems to disable the large packet. Didn't tested it since mine was already disabled
-
-Get-NetAdapterBinding -IncludeHidden -Name "vEthernet (WSL)" # Check if ipv6 was disabled
-Get-NetAdapterAdvancedProperty -IncludeHidden -Name "vEthernet (WSL)" # Check if large packet was disabled
-```
-### Reboot your computer
 
 ## Install Ubuntu from the Microsoft store page
 
-Install Ubuntu by opening the Microsoft Store application and searching for Ubuntu. Install the application called just 'Ubuntu'.
+Install Ubuntu by opening the Microsoft Store application and searching for Ubuntu. Install the application called 'Ubuntu'.
 
 ![Screenshot of Ubuntu app in Microsoft Store](media/ubuntu.PNG)
 
