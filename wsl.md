@@ -12,6 +12,11 @@ These notes are for staff of CodeFellows and not intended for students. If you'r
 First run this:
 ```bash
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+Disable-NetAdapterBinding -Name "vEthernet (WSL)" -ComponentID ms_tcpip6 -IncludeHidden # disable ipv6
+Disable-NetAdapterLso -Name "vEthernet (WSL)" -IncludeHidden # Seems to disable the large packet. Didn't tested it since mine was already disabled
+
+Get-NetAdapterBinding -IncludeHidden -Name "vEthernet (WSL)" # Check if ipv6 was disabled
+Get-NetAdapterAdvancedProperty -IncludeHidden -Name "vEthernet (WSL)" # Check if large packet was disabled
 ```
 Enable the Windows Subsystem for Linux
 ```bash
