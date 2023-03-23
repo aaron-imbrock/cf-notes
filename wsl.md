@@ -45,10 +45,12 @@ wsl --update
 
 ## Install Ubuntu from the Microsoft store page
 
-Install Ubuntu, this is the same as opening the Microsoft Store app, searching for 'Ubuntu' and installing it from there:
+This is the same as opening the Microsoft Store app, searching for 'Ubuntu' and installing it from there:
 ```powershell
 wsl --install -d ubuntu
 ```
+
+From the Start Menu search for Ubuntu. Open it.
 
 Install Ubuntu with a simple username and password. Note the password you used. Keep it simple.
 
@@ -76,12 +78,13 @@ sudo sh -c 'apt -y autoremove'
 ```bash
 chsh -s /usr/bin/zsh
 ```
-Fully close all Ubuntu terminals. Then open a new Ubuntu terminal before continuing.
 
 ### Install Oh-My-ZSH
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+
+Fully close all Ubuntu terminals. Then open a new Ubuntu terminal before continuing.
 
 ### Install Homebrew
 ```bash
