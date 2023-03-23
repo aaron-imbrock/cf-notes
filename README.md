@@ -20,7 +20,7 @@ These are the notes I refer to for common issues I come across. They assume you 
 
 ## 401 Python
 
-[401JS Notes](401python.md)
+[401Python Notes](401python.md)
 
 ## 401 JS
 
