@@ -37,9 +37,11 @@ wsl --update
 ```
 ### Reboot your computer
 
-## Install Ubuntu 20.04 LTS from the Microsoft store page
+## Install Ubuntu from the Microsoft store page
 
-[Install Ubuntu 20.04LTS](https://www.microsoft.com/store/apps/9n6svws3rx71)
+Install Ubuntu by opening the Microsoft Store application and searching for Ubuntu. Install the application called just 'Ubuntu'.
+
+![Screenshot of Ubuntu app in Microsoft Store](media/ubuntu-microsoft-store.jpeg)
 
 Install Ubuntu with a simple username and password. Note the password you used. Keep it simple.
 
