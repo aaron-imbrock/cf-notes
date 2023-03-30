@@ -106,6 +106,7 @@ git config --global user.email 'your github email address'
 git config --global core.editor "code --wait"
 git config --global init.defaultbranch main
 git config --global core.pager "cat"
+git config --global http.postBuffer 157286400
 ```
 ### Run Github Authentication
 ```bash
