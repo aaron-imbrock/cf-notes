@@ -1,5 +1,7 @@
 # MongoDB WSL Notes
 
+This is just for WSL, but will cover all necessary steps to accomplish https://codefellows.github.io/setup-guide/code-301/1-database
+
 ```shell
 
 wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
