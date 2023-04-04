@@ -1,6 +1,8 @@
 # MongoDB WSL Notes
 
-This is just for WSL, but will cover all necessary steps to accomplish https://codefellows.github.io/setup-guide/code-301/1-database
+This is just for WSL, but will cover all necessary steps to get MongoDB running on WSL.
+
+https://codefellows.github.io/setup-guide/code-301/1-database
 
 ```shell
 
