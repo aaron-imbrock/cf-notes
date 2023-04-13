@@ -16,6 +16,17 @@ These notes are for staff of CodeFellows and not intended for students. If you'r
 
 *Pull Requests gladly accepted.*
 
+## In case of ...
+
+If you notice you're logged in as root you can fix that by:
+
+```bash
+vim /etc/wsl.conf	# open this file
+
+[user]			# type these two lines in
+default=username	# replace username with your username
+```
+
 ## In POWERSHELL (ADMIN)
 
 Enable the Windows Subsystem for Linux
