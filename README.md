@@ -1,6 +1,6 @@
 # cf-notes
 
-These are the notes I refer to for common issues I come across. They assume you know what you're doing.
+These are the notes I refer to for common issues I come across.
 
 ## WSL Install Steps
 
