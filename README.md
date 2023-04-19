@@ -20,11 +20,11 @@ These are the notes I refer to for common issues I come across.
 
 ## 401 Python
 
-[401Python Notes](401python.md)
+[401 Python Notes](401python.md)
 
 ## 401 Javascript
 
-[401JS Notes](401js.md)
+[401 JavaScript Notes](401js.md)
 
 ## 401 Java
 
