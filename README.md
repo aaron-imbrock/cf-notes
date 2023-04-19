@@ -28,4 +28,3 @@ These are the notes I refer to for common issues I come across.
 
 ## 401 Java
 
-[401 Java Install Notes](401java.md)
