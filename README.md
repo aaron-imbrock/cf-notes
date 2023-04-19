@@ -25,3 +25,7 @@ These are the notes I refer to for common issues I come across. They assume you 
 ## 401 JS
 
 [401JS Notes](401js.md)
+
+## 401 Java
+
+[401 Java Install Notes](401java.md)
