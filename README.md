@@ -22,7 +22,7 @@ These are the notes I refer to for common issues I come across. They assume you 
 
 [401Python Notes](401python.md)
 
-## 401 JS
+## 401 Javascript
 
 [401JS Notes](401js.md)
 
