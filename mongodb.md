@@ -14,6 +14,7 @@ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongod
 ```shell
 curl -s http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb -o /tmp/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
 sudo dpkg -i /tmp/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+sudo apt --fix-broken install
 sudo apt-get update
 sudo apt-get install -y mongodb-org
 ```
