@@ -27,7 +27,7 @@ $ ls -l $(which gh)
 lrwxrwxrwx 1 ubuntu ubuntu 26 Feb 21 12:27 /home/linuxbrew/.linuxbrew/bin/gh -> ../Cellar/gh/2.23.0/bin/gh
 ```
 ```shell
-$ cat .gitconfig 
+$ cat ~/.gitconfig 
 ...
 [credential "https://github.com"]
 	helper = 
@@ -37,7 +37,7 @@ $ cat .gitconfig
 	helper = !/home/linuxbrew/.linuxbrew/Cellar/gh/1.18.0/bin/gh auth git-credential
 ```
 ### Fix 
-Open `.gitconfig` and change the version to match the new version and `git push` will once again just work.
+Open `~/.gitconfig` and change the version to match the new version. `git push` will once again just work. Here we've changed `gh/1.18.0` to `gh/2.23.0`.
 ```shell
 [credential "https://github.com"]
 	helper = 
