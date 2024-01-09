@@ -119,6 +119,8 @@ git config --global core.editor "code --wait"
 git config --global init.defaultbranch main
 git config --global core.pager "cat"
 git config --global http.postBuffer 157286400
+# Confirm changes
+git config --list
 ```
 [git config --global http.postBuffer](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httppostBuffer))
 ### Run Github Authentication
