@@ -123,7 +123,7 @@ git config --global http.postBuffer 157286400
 git config --list
 ```
 #### http.postBuffer explanation
-[git config --global http.postBuffer](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httppostBuffer))
+[git config --global http.postBuffer](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httppostBuffer)
 
 ### Run Github Authentication
 ```bash
