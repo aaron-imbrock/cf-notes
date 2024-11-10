@@ -112,6 +112,9 @@ brew install gcc git gh tree node
 ### Copy this into Notepad and update. Paste notepad text into terminal.
 Github is essentially a resume, so use your name as it appears on LinkedIn. Make the changes below inside the single quotes.
 
+#### http.postBuffer explanation
+[git config --global http.postBuffer](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httppostBuffer)
+
 ```bash
 git config --global user.name 'First and Last Name' # For example 'Aaron Imbrock' 
 git config --global user.email 'your github email address'
@@ -122,8 +125,7 @@ git config --global http.postBuffer 157286400
 # Confirm changes
 git config --list
 ```
-#### http.postBuffer explanation
-[git config --global http.postBuffer](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httppostBuffer)
+
 
 ### Run Github Authentication
 ```bash
